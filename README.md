@@ -1,4 +1,4 @@
-# Sistemas Operativos - Tema: X
+# Sistemas Operativos - Tema 2: Linux Cluster with 3 or more Applications
 
 Trabalho prático 6º Semestre de Engenharia Informática
 
