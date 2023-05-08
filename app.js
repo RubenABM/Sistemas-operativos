@@ -11,7 +11,7 @@ var studentsRouter = require('./routes/students');
 
 var app = express();
 
-const port = process.env.PORT || 5555;
+//const port = process.env.PORT || 5555;
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -22,9 +22,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/students', studentsRouter);
 
-
+/*
 app.listen(port, () => {
     console.log("App is running on port " + port);
-  });
+  });*/
+
+const ip = '10.0.2.100'; // Your specific IP address
+const port = 5555; // Port number
+
+app.listen(port, ip, () => {
+  console.log(`Server running at ${ip}:${port}/`);
+});
 
 module.exports = app;
